@@ -1,8 +1,57 @@
 body {
-    background: white url("images/background.gif") no-repeat;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+ol {
+    margin-top: 20px;
+    font-size: 25px;
 }
 
 li a {
-    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
     text-decoration: none;
+    margin-left: 20px;
+}
+
+li{
+    margin-top: 10px;
+}
+
+fieldset{
+    border: none;
+}
+.submit-button {
+    margin-top: 15px;
+    margin-left: 5px;
+    background-color: rgb(108, 228, 108);
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: none;
+    transition: 100ms;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: rgb(151, 245, 151);
+}
+
+.vote-again{
+    background-color: rgb(255, 116, 116);
+    color: white;
+    border-radius: 5px;
+    padding: 4px 10px;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 100ms;
+    cursor: pointer;
+}
+.vote-again:hover{
+    background-color: rgb(255, 144, 144);
+}
+input {
+    cursor: pointer;
+}
+label {
+    cursor: pointer;
 }
