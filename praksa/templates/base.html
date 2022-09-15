@@ -52,8 +52,7 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h2 class="logo me-auto"><a href="/praksa">praksa</a></h2>
-      <a href="/polls">anketa</a>
+      <h2 class="logo me-auto"><a href="/">praksa</a></h2>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -105,7 +104,7 @@
         <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.jpg' %})">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Sailor</span></h2>
+              <h2 class="animate__animated animate__fadeInDown">{% placeholder "title" or %}Welcome to <span>Sailor</span>{% endplaceholder %}</h2>
               <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
@@ -155,8 +154,8 @@
 
         <div class="row content">
           <div class="col-lg-6">
-            <h2>Eum ipsam laborum deleniti velitena</h2>
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
+            <h2>{% placeholder "title2" or %}Eum ipsam laborum deleniti velitena{% endplaceholder %}</h2>
+            <h3>{% placeholder "title2text" or %}Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave{% endplaceholder %}</h3>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             {% block content %}
@@ -185,7 +184,7 @@
         <div class="row">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="">
+            {% placeholder "img1" or %}<img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="">{% endplaceholder %}
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -284,7 +283,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+              {% placeholder "image" or %}<img src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">{% endplaceholder %}
               <div class="portfolio-info">
                 <h4>App 1</h4>
                 <p>App</p>
@@ -298,7 +297,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+              {% placeholder "img3" or %}<img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">{% endplaceholder %}
               <div class="portfolio-info">
                 <h4>Web 3</h4>
                 <p>Web</p>
